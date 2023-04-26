@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/modules/index.ts" type="module" defer></script>
+    
+    <title>Social Media</title>
+</head>
+
+<body id="body">
+    <div id="logInpage">
+    <form id="form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <br />
+        <label for="image-selection">Select an image:</label>
+        <select id="image-selection">
+            <option value="https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267__340.jpg">Owl</option>
+            <option value="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80">Fox</option>
+            <option value="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?cs=srgb&dl=pexels-pixabay-47547.jpg&fm=jpg">Squirrel</option>
+          </select>
+          
+        <br />
+        <button id="submit-button" type="submit">Log In</button>
+        <button id="create-account-button" type="button">Create Account</button>
+    </form>
+</div>
+<div id="container" style="display:none;">
+    <h2>Status updates</h2>
+    <div>
+      <h3>Logged in as: <span id="current-user"></span></h3>
+      <div>
+        <label for="status-input">Enter a status update:</label>
+        <input type="text" id="status-input" />
+        <button id="submit-status">Submit</button>
+      </div>
+      <ul id="status-updates"></ul>
+      <p id="userStatus"></p>
+      <p id="loggedInUserHeader"></p>
+    </div>
+</div>
+<div>
+    <h2>All Users</h2>
+    <ul id="allUsersList"></ul>
+    
+</div>
+
+<button id="backButton" style="display:none;">Back</button>
+<button id="delete-account-button" style="display:none;">Delete Account</button>
+
+<div id="otherUserPage" style="display: none;">
+    <h2 class="username"></h2>
+    <img class="profile-pic" width="200" height="200" />
+    <div class="latest-status-updates"></div>
+    <!-- <button id="backToAllUsers">Back to All Users</button> -->
+  </div>
+  
+  
+
+</body>
+
+
+
+</html>

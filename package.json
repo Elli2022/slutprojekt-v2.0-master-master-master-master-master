@@ -1,0 +1,21 @@
+{
+  "name": "fe22-js2-slutprojekt-eleonora-nocentini",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html",
+    "start": "parcel",
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "node": "^19.8.1"
+  }
+}
